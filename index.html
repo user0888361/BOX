@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>バーコード読み取り</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>荷物受取管理システム</h2>
+    <hr>
+
+    <div class="form-section">
+      <button id="startScan">スキャン開始</button>
+      <div id="scanner" class="scanner"></div>
+      <p>スキャン結果: <span id="barcodeResult">-</span></p>
+      ⏫番号確認！！
+
+      <label for="sender">依頼主:</label>
+    <input type="file">
+
+      <select name="example">
+        <option>選択</option>
+<option>中俣直子</option>
+<option>中俣輝一</option>
+<option>中俣博幸</option>
+</select>
+<p></p>
+
+      <button onclick="location.href='table.html'">登録</button>
+    </div>
+    <p></p>
+    <button onclick="location.reload();">情報が残っている場合はリロードしてください</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quagga/0.12.1/quagga.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
